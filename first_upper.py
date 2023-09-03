@@ -8,5 +8,4 @@ def first_upper(str1):
     if count == 2:
         print(str1.upper())
 
-
 first_upper("MF doom")
