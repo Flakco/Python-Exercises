@@ -1,18 +1,22 @@
 import time
 
-
-string = input("ingrese una cadena de texto: ")
 start = time.time()
-dic = {}
 
-for let in string:
-    if let in dic:
-        dic[let] += 1
-    else:
-        dic[let] = 1
-            
+def frequency(str1):
+    dic = {}
 
-#doublenumbers = {e: e*2 for e in range(1,11)}
-print(dic)
+    for let in str1:
+        if let in dic:
+            dic[let] += 1
+        else:
+            dic[let] = 1
+
+    
+    print(dic)
+    
+    for key,val in dic.items():
+        if val > 1:
+            print(key,val)
+
 end = time.time()
-print(end - start)
+frequency("thequickbrownfoxjumpsoverthelazydog")
